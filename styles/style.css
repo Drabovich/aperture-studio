@@ -1,0 +1,813 @@
+/* Обнуление CSS */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+/* Подключение шрифта */
+@font-face {
+    font-family: 'poppins';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+
+/* Начало проекта */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "poppins";
+}
+
+.headerly {
+    display: flex;
+    width: 100%;
+    min-height: 90px;
+    background-color: black;
+}
+
+.logo {
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    padding-left: 152px;
+}
+
+.navly {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    color: white;
+    list-style: none;
+}
+
+.list {
+    display: flex;
+}
+
+.item {
+    font-family: "poppins";
+    font-size: 15px;
+    padding-right: 32px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: rgb(107, 86, 86);
+}
+
+.search {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    margin-right: 140px;
+}
+
+.search input {
+    width: 155px;
+    height: 42px;
+    border-radius: 14px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.search input::placeholder {
+    color: black;
+    font-family: "poppins";
+    font-size: 16px;
+}
+
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+
+/* 1 раздел */
+.studio {
+    display: flex;
+    flex-direction: column;
+    min-height: 716px;
+    width: 100%;
+    background: url(../images/1.jpg) no-repeat center/cover;
+}
+
+.studio__inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+.studio__text {
+    width: 600px;
+    height: 209px;
+    text-align: center;
+    font-size: 14px;
+    color: #C0C0C0;
+    line-height: 1.5;
+}
+
+.text__uppercase {
+    text-transform: uppercase;
+}
+
+.studio__text h1 {
+    font-size: 54px;
+    color: white;
+}
+
+.studio__icons__inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.studio__icons {
+    padding-bottom: 40px;
+    padding-right: 24px;
+}
+
+.studio__list {
+    display: flex;
+    color: white;
+    font-size: 12px;
+}
+
+.studio__item {
+    margin-right: 16px;
+}
+
+.studio__icons__image {
+    margin-right: 6px;
+}
+
+
+/* 2 раздел */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 1558px;
+    background-color: black;
+}
+
+.gallery__text__wrapper {
+    margin-bottom: 40px;
+}
+
+.gallery__text {
+    width: 413px;
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.5;
+    color: #C0C0C0;
+}
+
+.gallery__text h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.gallery__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    width: 1168px;
+    height: 1216px;
+}
+
+.gallery__box1 {
+    width: 576px;
+    height: 600px;
+    padding-left: 30px;
+    padding-top: 426px;
+    color: #C0C0C0;
+    font-size: 14px;
+    line-height: 1.5;
+    background: url(../images/1\ fon.jpg) no-repeat;
+}
+
+.gallery__box__header {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.gallery__box__button {
+    width: 143px;
+    height: 42px;
+    margin-top: 20px;
+    border-radius: 14px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.gallery__box__button a {
+    color: black;
+}
+
+.gallery__box__button::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.gallery__box__button:hover {
+    background-color: rgb(107, 86, 86);
+    cursor: pointer;
+}
+
+.gallery__box2 {
+    width: 576px;
+    height: 600px;
+    padding-left: 30px;
+    padding-top: 426px;
+    color: #C0C0C0;
+    font-size: 14px;
+    line-height: 1.5;
+    background: url(../images/2\ fon.jpg) no-repeat;
+}
+
+.gallery__box3 {
+    width: 576px;
+    height: 600px;
+    padding-left: 30px;
+    padding-top: 426px;
+    color: #C0C0C0;
+    font-size: 14px;
+    line-height: 1.5;
+    background: url(../images/3fon.jpg) no-repeat;
+}
+
+.gallery__box4 {
+    width: 576px;
+    height: 600px;
+    padding-left: 30px;
+    padding-top: 426px;
+    color: #C0C0C0;
+    font-size: 14px;
+    line-height: 1.5;
+    background: url(../images/4\ fon.jpg) no-repeat;
+}
+
+
+/* 3 раздел */
+.sunset {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    width: 100%;
+    background: url(../images/3razdel.jpg) no-repeat center/cover;
+}
+
+.sunset__inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 100px;
+}
+
+.sunset__text {
+    width: 298px;
+    height: 80px;
+    font-size: 14px;
+    color: #C0C0C0;
+    line-height: 1.5;
+}
+
+.sunset__text h2 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.sunset__icons__inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sunset__icons {
+    margin-bottom: 40px;
+    margin-right: 24px;
+}
+
+.sunset__list {
+    display: flex;
+    color: white;
+    font-size: 12px;
+}
+
+.sunset__item {
+    margin-right: 16px;
+}
+
+.sunset__icons__image {
+    margin-right: 6px;
+}
+
+
+/* 4 раздел */
+.tools {
+    display: flex;
+    width: 100%;
+    min-height: 540px;
+}
+
+.tools__box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: black;
+}
+
+.tools__text {
+    width: 514px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #C0C0C0;
+}
+
+.text__uppercase {
+    text-transform: uppercase;
+}
+
+.tools__text h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.tools__button__wrapper {
+    width: 514px;
+    padding-top: 20px;
+}
+
+.tools__button {
+    display: flex;
+    align-items: center;
+    width: 143px;
+    height: 42px;
+    font-size: 15px;
+    border-radius: 14px;
+    background-color: white;
+}
+
+.tools__button a {
+    color: black;
+}
+
+.tools__button::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tools__button:hover {
+    background-color: rgb(107, 86, 86);
+    cursor: pointer;
+}
+
+.tools__box2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;
+    background: url(../images/4razdel.jpg) no-repeat center/cover;
+}
+
+.tools__icons {
+    margin-right: 24px;
+    margin-bottom: 40px;
+}
+
+.tools__list {
+    display: flex;
+    color: white;
+    font-size: 12px;
+}
+
+.tools__item {
+    margin-right: 16px;
+}
+
+.tools__image {
+    margin-right: 6px;
+}
+
+
+/* 5 раздел */
+.forest {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 600px;
+    background: url(../images/5razdel.jpg) no-repeat center/cover;
+}
+
+.forest__inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 100px;
+}
+
+.forest__text {
+    width: 298px;
+    height: 80px;
+    font-size: 14px;
+    color: #C0C0C0;
+    line-height: 1.5;
+}
+
+.forest__text h2 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.forest__icons__inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.forest__icons {
+    margin-bottom: 40px;
+    margin-right: 24px;
+}
+
+.forest__list {
+    display: flex;
+    color: white;
+    font-size: 12px;
+}
+
+.forest__item {
+    margin-right: 16px;
+}
+
+.forest__icons__image {
+    margin-right: 6px;
+}
+
+
+/* 6 раздел */
+.companies {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 500px;
+    background-color: black;
+}
+
+.companies__text__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.companies__text {
+    font-size: 24px;
+    color: #C0C0C0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.companies h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.companies__logo__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 40px;
+}
+
+.companies__logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1168px;
+    height: 158px;
+}
+
+
+/* 7 раздел */
+.mountains {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 600px;
+    background: url(../images/6razdel.jpg) no-repeat center/cover;
+}
+
+.mountains__inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 100px;
+}
+
+.mountains__text {
+    width: 298px;
+    height: 80px;
+    font-size: 14px;
+    color: #C0C0C0;
+    line-height: 1.5;
+}
+
+.mountains__text h2 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.mountains__icons__inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mountains__icons {
+    margin-bottom: 40px;
+    margin-right: 24px;
+}
+
+.mountains__list {
+    display: flex;
+    color: white;
+    font-size: 12px;
+}
+
+.mountains__item {
+    margin-right: 16px;
+}
+
+.mountains__icons__image {
+    margin-right: 6px;
+}
+
+
+/* 8 раздел */
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 414px;
+    background-color: black;
+}
+
+.service__text {
+    width: 571px;
+    font-size: 24px;
+    color: #C0C0C0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.service h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.service__button__wrappor {
+    margin-top: 22px;
+}
+
+.service__button {
+    width: 143px;
+    height: 42px;
+    border-radius: 14px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "poppins";
+}
+
+.service__button a {
+    color: black;
+}
+
+.service__button::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.service__button:hover {
+    background-color: rgb(107, 86, 86);
+    cursor: pointer;
+}
+
+
+/* Подвал */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 652px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 1168px;
+    height: 452px;
+}
+
+.footer__container__nav {
+    display: flex;
+    height: 237px;
+    line-height: 2;
+    border-bottom: 2px solid white;
+}
+
+.footer__container__nav__box1 {
+    flex-grow: 1;
+    font-size: 13px;
+    line-height: 4;
+    color: #C0C0C0;
+
+}
+
+.footer__container__nav__box2 {
+    width: 225px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer__container__nav__header {
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+.footer__container__nav__box3 {
+    width: 221px;
+    font-size: 13px;
+    color: white;
+}
+
+.footer__container__search {
+    display: flex;
+    align-items: center;
+    height: 134px;
+    border-bottom: 2px solid white;
+}
+
+.footer__container__search__box1 {
+    flex-grow: 1;
+    font-size: 13px;
+    line-height: 3;
+    color: #C0C0C0;
+}
+
+.footer__container__search__newsletter {
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer__container__search__box2 input {
+    width: 458px;
+    height: 52px;
+    border-radius: 12px;
+}
+
+.footer__container__search__box2 input::placeholder {
+    font-weight: bold;
+    font-size: 14px;
+    padding-right: 20px;
+    text-align: right;
+    color: black;
+}
+
+.footer__container__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 81px;
+}
+
+.footer__container__copyright__box1 {
+    color: #C0C0C0;
+    font-size: 14px;
+}
+
+.footer__container__copyright__licensing {
+    font-size: 13px;
+}
